@@ -1,79 +1,201 @@
-import React, { Component } from 'react';
-import { StyleSheet, View, TextInput, TouchableOpacity, Text } from 'react-native';
+import React, { Component } from "react";
+import {
+  StyleSheet,
+  View,
+  TextInput,
+  TouchableOpacity,
+  Text
+} from "react-native";
+import {Navigation} from 'react-native-navigation';
+
 //styles
-import { btn_color,btn_text_size } from '../../utils/colorAndFonts';
-import Button from '../ReusbaleComponents/Button';
+import Button from "../ReusbaleComponents/Button";
+import TextInputView from "../ReusbaleComponents/TextInput";
+import TextView from "../ReusbaleComponents/Text";
+import Seperator from '../ReusbaleComponents/Separator';
 
-const buttonPressed = () => {
-    console.log(`It's working.`);
-  };
-  
+//theme config
+import { color_p_light, font_size_small, color_p_dark, color_p_dark_text } from "../../utils/theme_config";
 
-const LoginForm = () => {
+class LoginForm extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      email: undefined,
+      password: undefined,
+      btn_login_label:'LOGIN',
+      err_login: false
+    };
+  }
+
+  render() {
+    validateEmailidation = email => {
+      let re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+      return re.test(email);
+    };
+
+    start_home = () => {
+        Navigation.startTabBasedApp({
+            tabs:[
+                {
+                    label:'Home',
+                    screen:'debt.home',
+                    icon:require('../../images/home_icon.png'),
+                    title:'Dashboard',
+                   
+                },
+                {
+                    label:'Income',
+                    screen:'debt.income',
+                    icon:require('../../images/income_icon.png'),
+                    title:'Income'
+                },
+                {
+                    label:'Expense',
+                    screen:'debt.expense',
+                    icon:require('../../images/expense_icon.png'),
+                    title:'Expense'
+                },
+                {
+                    label:'Savings',
+                    screen:'debt.savings',
+                    icon:require('../../images/saving_icon.png'),
+                    title:'Savings'
+                }
+            ],
+            tabsStyle:{
+                tabBarBackgroundColor: color_p_dark,
+                tabBarButtonColor:color_p_dark_text,
+                tabBarSelectedButtonColor:color_p_dark_text
+            },
+            appStyle:{
+                orientation:'auto',
+            }
+        })
+    }
+
+    button_pressed = (type) => {
+      switch (type) {
+        case "login":
+          switch (validateEmailidation(this.state.email)) {
+            case true:
+              console.log("true");
+              this.state.password.length >= 6
+                ? login_user()
+                : this.setState({ err_login: true });
+
+              break;
+            case false:
+              this.setState({ err_login: true });
+              break;
+          }
+          break;
+        case "register":
+          switch (validateEmailidation(this.state.email)) {
+            case true:
+              console.log("true");
+              this.state.password.length >= 6
+                ? register_user()
+                : this.setState({ err_login: true });
+
+              break;
+            case false:
+              this.setState({ err_login: true });
+              break;
+          }
+          break;
+          break;
+      }
+    };
+
+    login_user = () => {
+      alert("Logged");
+    };
+
     return (
-        <View style={styles.container}>
-            <TextInput
-                style={styles.txt_in_username}
-                placeholder={'username'}/>
-            <TextInput
-                style={styles.txt_in_password}
-                placeholder={'password'}/>
-            <TouchableOpacity
-                style={styles.btn_login}>
-                <Text
-                    style={styles.txt_login}>Login</Text>
-            </TouchableOpacity>
+      <View style={styles.container}>
+        <TextInputView
+          txt_input_label={"username"}
+          onChangeText={email => this.setState({ email })}
+        />
 
-             <TouchableOpacity
-                style={styles.btn_login}
-            >
-                <Text
-                    style={styles.txt_register}
-                >Register</Text>
-            </TouchableOpacity>
-            <Button onPress={buttonPressed} />
-        </View>
-    )
+        <TextInputView
+          txt_input_label={"password"}
+          onChangeText={password => this.setState({ password })}
+        />
+        
+        {this.state.err_login && (
+          <TextView
+            txt_label={"Invalid email or password"}
+            style_label={styles.err_text}
+          />
+        )}
+
+        {this.state.btn_login_label === 'LOGIN' && (
+        //  <Button onPress={()=>button_pressed("login")} label={"Login"} />
+          <Button style_text={styles.btn_text} onPress={start_home} label={"Login"} />
+
+        )}
+        {this.state.btn_login_label === 'REGISTER' && (
+          <Button style_text={styles.btn_text} onPress={()=>button_pressed("register")} label={"Register"} />
+        )}
+
+        <Seperator/>
+
+          <Button style_text={styles.btn_text} style_button={styles.fb_btn} onPress={()=>button_pressed("register")} label={"Continue with facebook"} />
+
+          <Button style_text={styles.btn_text} style_button={styles.google_btn} onPress={()=>button_pressed("register")} label={"Continue with Google"} />
+
+
+        {this.state.btn_login_label === 'LOGIN' ? (
+          <Button
+            onPress={() => this.setState({ btn_login_label: 'REGISTER' })}
+            style_button={styles.reg_button}
+            style_text={styles.reg_text}
+            label={"Are you want to Live Better Life? Then Register here. "}
+          />
+        ):
+        <Button
+            onPress={() => this.setState({ btn_login_label: 'LOGIN' })}
+            style_button={styles.reg_button}
+            style_text={styles.reg_text}
+            label={"Alrady user then Login. "}
+          />
+        }
+      </View>
+    );
+  }
 }
 
-const styles= StyleSheet.create({
-    container:{
-        backgroundColor:'yellow',
-        alignItems: 'center',
-        justifyContent:"center",
-        margin:30,
-        padding:20,
-       flex: 1,
-    },
-    txt_in_username:{
-        width:'100%',
-        borderWidth: 1,
-        borderRadius: 100,
-        height:35
-     
-    },
-    txt_in_password:{
-        width:'100%',
-        borderWidth: 1,
-        borderRadius: 100,
-        marginTop:20,
-        marginBottom:20,
-        height:35
-    },
-    btn_login:{
-        width:'100%',
-        borderWidth: 1,
-        borderRadius: 100,
-        backgroundColor:btn_color,
-        alignItems: 'center',
-        justifyContent: 'center',
-        height:40
-    },
-    txt_login:{
-        fontSize:btn_text_size,
-        padding:5
-    }
-    
-})
+const styles = StyleSheet.create({
+  container: {
+    margin: 10,
+    padding: 10,
+    flex: 1,
+  },
+  err_text: {
+    color: "red",
+    fontSize: font_size_small,
+    margin: 0,
+    marginLeft: 10
+  },
+  reg_button: {
+    backgroundColor: "#fff",elevation:0
+  },
+  reg_text: {
+    color: color_p_light,
+    fontSize: font_size_small,
+    margin: 5
+  },
+  fb_btn:{
+    backgroundColor:'#3B5998'
+  },
+  google_btn:{
+    backgroundColor:'#db3236'
+  },
+  btn_text:{
+    color:color_p_dark_text
+  }
+});
 
-export default LoginForm
+export default LoginForm;

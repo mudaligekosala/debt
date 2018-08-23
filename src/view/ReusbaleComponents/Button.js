@@ -5,18 +5,21 @@ import {
   TouchableOpacity
 } from 'react-native';
 import PropTypes from 'prop-types';
+//theme style
+import { color_primary } from '../../utils/theme_config';
+//reusable Comp
+import Label from './Text';
 
-
-export default function Button({
+ const Button =({
   onPress,
   label = 'Click me',
-  buttonStyle = styles.button,
-  textColor = styles.text,
-}) {
-
+  style_button = styles.button,
+  style_text,
+  disable = false
+}) => {
   return (
-    <TouchableOpacity style={buttonStyle} onPress={onPress}>
-      <Text style={textColor}>{label.toUpperCase()}</Text>
+    <TouchableOpacity style={[styles.button, style_button]} onPress={onPress} disable={disable}>
+    <Label style_label={style_text} txt_label={label} />
     </TouchableOpacity>
   );
 }
@@ -24,23 +27,23 @@ export default function Button({
 Button.propTypes = {
   onPress: PropTypes.func.isRequired,
   label: PropTypes.string,
-  buttonStyle: PropTypes.any,
-  textColor: PropTypes.any,
+  style_button: PropTypes.any,
+  style_text: PropTypes.any,
+  disable: PropTypes.bool
 };
 
 const styles = StyleSheet.create({
-  button: {
-    width: 150,
-    height: 75,
-    backgroundColor: 'ivory',
-    borderRadius: 5,
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginVertical: 15,
-  },
-  text: {
-    color: 'red',
-    fontSize: 16,
-  },
+  button:{
+      width:'100%',
+      borderRadius: 100,
+      justifyContent: 'center',
+      alignItems: 'center',
+      backgroundColor:color_primary,
+ marginTop:10, 
+ marginBottom:10,    
+      elevation:1,
+      height:50
+  }
 });
 
+export default Button;

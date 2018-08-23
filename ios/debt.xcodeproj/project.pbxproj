@@ -5,7 +5,6 @@
 	};
 	objectVersion = 46;
 	objects = {
-
 /* Begin PBXBuildFile section */
 		00C302E51ABCBA2D00DB3ED1 /* libRCTActionSheet.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302AC1ABCB8CE00DB3ED1 /* libRCTActionSheet.a */; };
 		00C302E71ABCBA2D00DB3ED1 /* libRCTGeolocation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C302BA1ABCB90400DB3ED1 /* libRCTGeolocation.a */; };
@@ -35,10 +34,30 @@
 		2D16E6881FA4F8E400B85C8A /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D16E6891FA4F8E400B85C8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* debtTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* debtTests.m */; };
 		2DF0FFEE2056DD460020B375 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
+		4B1EE923212F18A800A0B3F3 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 4B1EE922212F18A800A0B3F3 /* fonts */; };
+		4B1EE929212F1A6800A0B3F3 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 4B1EE928212F1A6800A0B3F3 /* fonts */; };
 		4B95BA77212D997A0062D171 /* libReactNativeNavigation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B95BA76212D99630062D171 /* libReactNativeNavigation.a */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
 		ADBDB9381DFEBF1600ED6528 /* libRCTBlob.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ADBDB9271DFEBF0700ED6528 /* libRCTBlob.a */; };
+		ED608F7954D047D69C6FEF37 /* NotoSerifSinhala_Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5C05EF82FCC040129EB4A8FE /* NotoSerifSinhala_Black.ttf */; };
+		BA97E81301FD4550A001EA92 /* NotoSerifSinhala_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 41A5A51483FC42C6BA4F6D05 /* NotoSerifSinhala_Regular.ttf */; };
+		21C1685E26BB4A82995FD162 /* NotoSerifSinhala-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E1A13200C29546AEA8D19E0A /* NotoSerifSinhala-Bold.ttf */; };
+		741949A52F8C416AACD679F1 /* NotoSerifSinhala-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9635872440FE4F4480E8DBCA /* NotoSerifSinhala-ExtraBold.ttf */; };
+		B01359C4C0CC47BFADF5F90B /* NotoSerifSinhala-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 83F6365A8223444AB53CEA89 /* NotoSerifSinhala-ExtraLight.ttf */; };
+		0D156409D0844901A2B3C6B7 /* NotoSerifSinhala-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C50812441E5436EAE512A36 /* NotoSerifSinhala-Light.ttf */; };
+		6B308D2BB9844943B102ECA4 /* NotoSerifSinhala-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CAB176BB18F34EB090C203FA /* NotoSerifSinhala-Medium.ttf */; };
+		0EB521EEF9C54BB69C3A7866 /* NotoSerifSinhala-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E9AEC91BF68F49478AF77105 /* NotoSerifSinhala-SemiBold.ttf */; };
+		7429EE913E354972BD970BD2 /* NotoSerifSinhala-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0901362646F44A31AA59490E /* NotoSerifSinhala-Thin.ttf */; };
+		6EF6E54A581248A5850493CD /* NotoSerifSinhala_Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 70C9A281C99E417C87ED1C44 /* NotoSerifSinhala_Black.ttf */; };
+		7DFA4FEC79EE434D95F26A69 /* NotoSerifSinhala_Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = C3B9EFCD8C4346FE8E53656C /* NotoSerifSinhala_Regular.ttf */; };
+		0D8FFE39ECB14D07BF6D73A6 /* NotoSerifSinhala-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 2B379E94AD4D4995A88EAFE2 /* NotoSerifSinhala-Bold.ttf */; };
+		8B2B72BEA1624EB695B66ABF /* NotoSerifSinhala-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A8AAEBF5E69A4EC0B3F5AAF8 /* NotoSerifSinhala-ExtraBold.ttf */; };
+		6C85E7B7000A42BDB7984A96 /* NotoSerifSinhala-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 273084755F744F7181C74D7E /* NotoSerifSinhala-ExtraLight.ttf */; };
+		0A43CAA0943E43C2968088EA /* NotoSerifSinhala-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B24AEAB0E7DB40328982E132 /* NotoSerifSinhala-Light.ttf */; };
+		50970C7035244A24A64121B3 /* NotoSerifSinhala-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F19579486B0C40DDACA42492 /* NotoSerifSinhala-Medium.ttf */; };
+		D957AD5EBCF44587AE5DED42 /* NotoSerifSinhala-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 210B236F204E4C43B1E38105 /* NotoSerifSinhala-SemiBold.ttf */; };
+		B8CEB3E3590247C79EB8AC61 /* NotoSerifSinhala-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 222366FEDAE04FFDB9F01457 /* NotoSerifSinhala-Thin.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -347,11 +366,32 @@
 		2D02E47B1E0B4A5D006451C7 /* debt-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "debt-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* debt-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "debt-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B1EE922212F18A800A0B3F3 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = ../assets/fonts; sourceTree = "<group>"; };
+		4B1EE926212F1A3D00A0B3F3 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = ../assets/fonts; sourceTree = "<group>"; };
+		4B1EE928212F1A6800A0B3F3 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		4B95BA4C212D99630062D171 /* ReactNativeNavigation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactNativeNavigation.xcodeproj; path = "../node_modules/react-native-navigation/ios/ReactNativeNavigation.xcodeproj"; sourceTree = "<group>"; };
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
 		ADBDB91F1DFEBF0600ED6528 /* RCTBlob.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTBlob.xcodeproj; path = "../node_modules/react-native/Libraries/Blob/RCTBlob.xcodeproj"; sourceTree = "<group>"; };
+		5C05EF82FCC040129EB4A8FE /* NotoSerifSinhala_Black.ttf */ = {isa = PBXFileReference; name = "NotoSerifSinhala_Black.ttf"; path = "../assets/fonts/NotoSerifSinhala_Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		41A5A51483FC42C6BA4F6D05 /* NotoSerifSinhala_Regular.ttf */ = {isa = PBXFileReference; name = "NotoSerifSinhala_Regular.ttf"; path = "../assets/fonts/NotoSerifSinhala_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E1A13200C29546AEA8D19E0A /* NotoSerifSinhala-Bold.ttf */ = {isa = PBXFileReference; name = "NotoSerifSinhala-Bold.ttf"; path = "../assets/fonts/NotoSerifSinhala-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9635872440FE4F4480E8DBCA /* NotoSerifSinhala-ExtraBold.ttf */ = {isa = PBXFileReference; name = "NotoSerifSinhala-ExtraBold.ttf"; path = "../assets/fonts/NotoSerifSinhala-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		83F6365A8223444AB53CEA89 /* NotoSerifSinhala-ExtraLight.ttf */ = {isa = PBXFileReference; name = "NotoSerifSinhala-ExtraLight.ttf"; path = "../assets/fonts/NotoSerifSinhala-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9C50812441E5436EAE512A36 /* NotoSerifSinhala-Light.ttf */ = {isa = PBXFileReference; name = "NotoSerifSinhala-Light.ttf"; path = "../assets/fonts/NotoSerifSinhala-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CAB176BB18F34EB090C203FA /* NotoSerifSinhala-Medium.ttf */ = {isa = PBXFileReference; name = "NotoSerifSinhala-Medium.ttf"; path = "../assets/fonts/NotoSerifSinhala-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E9AEC91BF68F49478AF77105 /* NotoSerifSinhala-SemiBold.ttf */ = {isa = PBXFileReference; name = "NotoSerifSinhala-SemiBold.ttf"; path = "../assets/fonts/NotoSerifSinhala-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0901362646F44A31AA59490E /* NotoSerifSinhala-Thin.ttf */ = {isa = PBXFileReference; name = "NotoSerifSinhala-Thin.ttf"; path = "../assets/fonts/NotoSerifSinhala-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		70C9A281C99E417C87ED1C44 /* NotoSerifSinhala_Black.ttf */ = {isa = PBXFileReference; name = "NotoSerifSinhala_Black.ttf"; path = "../assets/font/NotoSerifSinhala_Black.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		C3B9EFCD8C4346FE8E53656C /* NotoSerifSinhala_Regular.ttf */ = {isa = PBXFileReference; name = "NotoSerifSinhala_Regular.ttf"; path = "../assets/font/NotoSerifSinhala_Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2B379E94AD4D4995A88EAFE2 /* NotoSerifSinhala-Bold.ttf */ = {isa = PBXFileReference; name = "NotoSerifSinhala-Bold.ttf"; path = "../assets/font/NotoSerifSinhala-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A8AAEBF5E69A4EC0B3F5AAF8 /* NotoSerifSinhala-ExtraBold.ttf */ = {isa = PBXFileReference; name = "NotoSerifSinhala-ExtraBold.ttf"; path = "../assets/font/NotoSerifSinhala-ExtraBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		273084755F744F7181C74D7E /* NotoSerifSinhala-ExtraLight.ttf */ = {isa = PBXFileReference; name = "NotoSerifSinhala-ExtraLight.ttf"; path = "../assets/font/NotoSerifSinhala-ExtraLight.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		B24AEAB0E7DB40328982E132 /* NotoSerifSinhala-Light.ttf */ = {isa = PBXFileReference; name = "NotoSerifSinhala-Light.ttf"; path = "../assets/font/NotoSerifSinhala-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F19579486B0C40DDACA42492 /* NotoSerifSinhala-Medium.ttf */ = {isa = PBXFileReference; name = "NotoSerifSinhala-Medium.ttf"; path = "../assets/font/NotoSerifSinhala-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		210B236F204E4C43B1E38105 /* NotoSerifSinhala-SemiBold.ttf */ = {isa = PBXFileReference; name = "NotoSerifSinhala-SemiBold.ttf"; path = "../assets/font/NotoSerifSinhala-SemiBold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		222366FEDAE04FFDB9F01457 /* NotoSerifSinhala-Thin.ttf */ = {isa = PBXFileReference; name = "NotoSerifSinhala-Thin.ttf"; path = "../assets/font/NotoSerifSinhala-Thin.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -529,6 +569,9 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				4B1EE922212F18A800A0B3F3 /* fonts */,
+				4B1EE926212F1A3D00A0B3F3 /* fonts */,
+				4B1EE928212F1A6800A0B3F3 /* fonts */,
 				2D16E6891FA4F8E400B85C8A /* libReact.a */,
 			);
 			name = Frameworks;
@@ -597,6 +640,7 @@
 				00E356EF1AD99517003FC87E /* debtTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
+				4F885A5821DA4B9C856B5BBD /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -622,6 +666,32 @@
 			);
 			name = Products;
 			sourceTree = "<group>";
+		};
+		4F885A5821DA4B9C856B5BBD /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				5C05EF82FCC040129EB4A8FE /* NotoSerifSinhala_Black.ttf */,
+				41A5A51483FC42C6BA4F6D05 /* NotoSerifSinhala_Regular.ttf */,
+				E1A13200C29546AEA8D19E0A /* NotoSerifSinhala-Bold.ttf */,
+				9635872440FE4F4480E8DBCA /* NotoSerifSinhala-ExtraBold.ttf */,
+				83F6365A8223444AB53CEA89 /* NotoSerifSinhala-ExtraLight.ttf */,
+				9C50812441E5436EAE512A36 /* NotoSerifSinhala-Light.ttf */,
+				CAB176BB18F34EB090C203FA /* NotoSerifSinhala-Medium.ttf */,
+				E9AEC91BF68F49478AF77105 /* NotoSerifSinhala-SemiBold.ttf */,
+				0901362646F44A31AA59490E /* NotoSerifSinhala-Thin.ttf */,
+				70C9A281C99E417C87ED1C44 /* NotoSerifSinhala_Black.ttf */,
+				C3B9EFCD8C4346FE8E53656C /* NotoSerifSinhala_Regular.ttf */,
+				2B379E94AD4D4995A88EAFE2 /* NotoSerifSinhala-Bold.ttf */,
+				A8AAEBF5E69A4EC0B3F5AAF8 /* NotoSerifSinhala-ExtraBold.ttf */,
+				273084755F744F7181C74D7E /* NotoSerifSinhala-ExtraLight.ttf */,
+				B24AEAB0E7DB40328982E132 /* NotoSerifSinhala-Light.ttf */,
+				F19579486B0C40DDACA42492 /* NotoSerifSinhala-Medium.ttf */,
+				210B236F204E4C43B1E38105 /* NotoSerifSinhala-SemiBold.ttf */,
+				222366FEDAE04FFDB9F01457 /* NotoSerifSinhala-Thin.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -704,7 +774,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -1078,8 +1148,28 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B1EE923212F18A800A0B3F3 /* fonts in Resources */,
+				4B1EE929212F1A6800A0B3F3 /* fonts in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				ED608F7954D047D69C6FEF37 /* NotoSerifSinhala_Black.ttf in Resources */,
+				BA97E81301FD4550A001EA92 /* NotoSerifSinhala_Regular.ttf in Resources */,
+				21C1685E26BB4A82995FD162 /* NotoSerifSinhala-Bold.ttf in Resources */,
+				741949A52F8C416AACD679F1 /* NotoSerifSinhala-ExtraBold.ttf in Resources */,
+				B01359C4C0CC47BFADF5F90B /* NotoSerifSinhala-ExtraLight.ttf in Resources */,
+				0D156409D0844901A2B3C6B7 /* NotoSerifSinhala-Light.ttf in Resources */,
+				6B308D2BB9844943B102ECA4 /* NotoSerifSinhala-Medium.ttf in Resources */,
+				0EB521EEF9C54BB69C3A7866 /* NotoSerifSinhala-SemiBold.ttf in Resources */,
+				7429EE913E354972BD970BD2 /* NotoSerifSinhala-Thin.ttf in Resources */,
+				6EF6E54A581248A5850493CD /* NotoSerifSinhala_Black.ttf in Resources */,
+				7DFA4FEC79EE434D95F26A69 /* NotoSerifSinhala_Regular.ttf in Resources */,
+				0D8FFE39ECB14D07BF6D73A6 /* NotoSerifSinhala-Bold.ttf in Resources */,
+				8B2B72BEA1624EB695B66ABF /* NotoSerifSinhala-ExtraBold.ttf in Resources */,
+				6C85E7B7000A42BDB7984A96 /* NotoSerifSinhala-ExtraLight.ttf in Resources */,
+				0A43CAA0943E43C2968088EA /* NotoSerifSinhala-Light.ttf in Resources */,
+				50970C7035244A24A64121B3 /* NotoSerifSinhala-Medium.ttf in Resources */,
+				D957AD5EBCF44587AE5DED42 /* NotoSerifSinhala-SemiBold.ttf in Resources */,
+				B8CEB3E3590247C79EB8AC61 /* NotoSerifSinhala-Thin.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
