@@ -13,11 +13,11 @@ import Label from './Text';
 
 const Button = ({
   onPress,
-  label = 'Click me',
+  label ,
   style_button = styles.button,
   style_text,
   disable = false,
-  icon_name=''
+  icon_name
 }) => {
   return (
     <TouchableOpacity style={[styles.button, style_button]} onPress={onPress} disable={disable}>
@@ -46,7 +46,7 @@ const styles = StyleSheet.create({
     marginBottom: 10,
     elevation: 1,
     height: 50,
-flexDirection:'row'
+    flexDirection:'row'
   }
 });
 

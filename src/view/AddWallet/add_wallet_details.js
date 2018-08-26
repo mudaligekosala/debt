@@ -17,7 +17,7 @@ const AddWalletDetails = ({
         <View style={styles.container}>
             <Modal
                 animationType='slide'
-                transparent='false'
+                
                 visible={visible}
                 onRequestClose={onRequestClose}>
 
@@ -73,6 +73,8 @@ const styles = StyleSheet.create({
 
     }, btn_style: {
         width:'50%',
+        bottom:10,
+        right:10
         
     },
     btn_text: {

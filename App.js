@@ -9,6 +9,8 @@ import Home from './src/view/Home';
 import AddWallet from './src/view/AddWallet';
 
 
+
+
 Navigation.registerComponent('debt.Login',() => Login);
 Navigation.registerComponent('debt.home', ()=> Home);
 Navigation.registerComponent('debt.savings', ()=>Savings);
@@ -17,9 +19,10 @@ Navigation.registerComponent('debt.expense', ()=>Expense);
 Navigation.registerComponent('debt.add_wallet', ()=>AddWallet);
 
 
+
 export default () => Navigation.startSingleScreenApp({
   screen:{
-    screen:'debt.Login',
+    screen:'debt.income',
     title:'login',
     navigatorStyle:{
       navBarHidden:true

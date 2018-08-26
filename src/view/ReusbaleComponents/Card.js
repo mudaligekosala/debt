@@ -6,7 +6,7 @@ import ImageView from './Image';
 import TextView from './Text';
 
 
-import { font_size_small } from '../../utils/theme_config';
+import { font_size_small,font_size_extra_small } from '../../utils/theme_config';
 import Icon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 const CardView = ({
@@ -27,7 +27,7 @@ const CardView = ({
                                     <ImageView source={require('../../images/money.png')} img_style={{ width: 40, height: 40, marginTop: 0 }} />
                                 </View>
                                 <View style={styles.view_profile_name}>
-                                    <TextView txt_label={'Gayathri Gamage'} style_label={{ fontSize: 14, marginTop: 0, marginBottom: 5 }} />
+                                    <TextView txt_label={'Gayathri Gamage'} style_label={{ fontSize: font_size_small, marginTop: 0, marginBottom: 5 }} />
                                     <TextView txt_label={'Free account'} style_label={styles.txt_account_status} />
                                 </View>
 
@@ -79,12 +79,12 @@ const styles = StyleSheet.create({
         flex: 1
     },
     txt_account_status: {
-        fontSize: font_size_small,
+        fontSize: font_size_extra_small,
         marginTop: 0,
         color: 'gray'
     },
     container_support: {
-        flex: 1,
+        flex: 0.5,
         flexDirection: 'row',
         justifyContent: 'space-between'
     },

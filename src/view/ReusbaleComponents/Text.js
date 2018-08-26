@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import { font_size, color_primary_text } from '../../utils/theme_config';
 
 const Label = ({ 
-    txt_label = 'Click me',
+    txt_label ,
     style_label = styles.text,
  }) => {
      return(
